@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<!-- <style type="text/css">
+			div {
+				/*w:300*/
+				width: 300px;
+
+				/*h:300*/
+				height: 300px;
+			}
+		</style> -->
+
+	</head>
+
+	<body>
+		<!-- 10列表-->
+		<!-- ul>li*10>a[href="#"]{$百度一下} -->
+
+		<!-- 5行4列-->
+		<!-- table>tr*5>td{$}*4 -->
+
+		<!--
+		   1、 ">" 父子元素
+			   例如: ul>li
+			   按tab键	
+		-->
+		<ul>
+			<li></li>
+		</ul>
+
+		<!--
+			2、"+" 同级别元素
+			例如: div>p+p
+		-->
+		<div>
+			<p></p>
+			<p></p>
+		</div>
+
+		<!-- 
+		    ul>li>a+span 
+		-->
+		<ul>
+			<li><a href=""></a><span></span></li>
+		</ul>
+
+		<!--
+			3、"*"多少个元素
+			例如: ul>li*5
+		-->
+		<ul>
+			<1i></1i>
+			<1i></1i>
+			<1i></1i>
+			<1i></1i>
+			<1i></1i>
+		</ul>
+
+		<!--
+			ul>li*5>a+span
+		-->
+		<ul>
+			<li><a href=""></a><span></span></li>
+			<li><a href=""></a><span></span></li>
+			<li><a href=""></a><span></span></li>
+			<li><a href=""></a><span></span></li>
+			<li><a href=""></a><span></span></li>
+		</ul>
+
+		<!--
+			4、"{}"元素中内容
+			例如: p{百度一下}
+		-->
+		<p>百度一下</p>
+
+		<!--
+			5、"[]"元素中属性
+			 
+			// 书写顺序: 元素属性、元素中内容、元素个数
+			
+			例如: a[href="#"]{百度一下}*3
+		-->
+		<a href="#">百度一下</a>
+		<a href="#">百度一下</a>
+		<a href="#">百度一下</a>
+
+		<!--
+			6、"$" 序号(默认从1开始)
+			例如: ul>li*5>a[href="#"]{$、百度}
+		-->
+		<ul>
+			<li><a href="" herf="#">1、百度</a></li>
+			<li><a href="" herf="#">2、百度</a></li>
+			<li><a href="" herf="#">3、百度</a></li>
+			<li><a href="" herf="#">4、百度</a></li>
+			<li><a href="" herf="#">5、百度</a></li>
+		</ul>
+
+
+		<!--
+			@可以改变序号起始
+			例如: div>p{header $@5}*6
+		-->
+		<div>
+			<p>header 5</p>
+			<p>header 6</p>
+			<p>header 7</p>
+			<p>header 8</p>
+			<p>header 9</p>
+			<p>header 10</p>
+		</div>
+
+	</body>
+</html>
