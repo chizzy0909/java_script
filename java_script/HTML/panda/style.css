@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* 清松手寫體  https://www.facebook.com/groups/549661292148791/ */
+@font-face {
+  font-family: "myFont";
+  src: url(./清松手寫體1.ttf);
+}
+* {
+  font-family: "myFont", sans-serif;
+}
+
+.pic {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+}
+
+div.container {
+  border: 2px solid rgb(124, 109, 109);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  /* width: 100px; */
+  height: 100px;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
+
+  /* 写成一行 grow, shrink, basis; */
+  flex: 1 1 200px;
+}
+
+.box1 {
+  background-color: lightpink;
+}
+.box2 {
+  background-color: lightsalmon;
+}
+.box3 {
+  background-color: rgb(252, 252, 110);
+}
+.box4 {
+  background-color: lightskyblue;
+}
+.box5 {
+  background-color: plum;
+}

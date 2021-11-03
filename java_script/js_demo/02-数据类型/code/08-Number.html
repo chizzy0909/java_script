@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			// 计数方式: 2进制、8进制、10进制、16进制
+			// 二进制: 0、1
+			// 八进制: 0~7
+			// 十进制: 0~9
+			// 十进制: 0~9 a b c d e f
+
+			var num1 = 10; // 十进制
+
+			var num2 = 070; // 八进制
+			var num3 = 098; // 无效，自动解析为98
+
+			var box1 = 0x10; // 十六进制
+			var box2 = 0xff; // 十六进制
+
+
+			var box3 = 2.3; // 浮点数
+			var box4 = 0.03; // 浮点数
+
+
+			// NaN(Not a Number)非数值
+			// 如果0/0没有返回值，即box5没有值，导致后续在使用box5时，程序报错;为了避免这个问题， 返回NaN
+			var box5 = 0 / 0;
+			// alert(box5);		// NaN
+			var box6 = 12 / 0;
+			//alert(box6); // Infinity
+
+			// alert(NaN == NaN);	// false
+
+
+			// isNaN()，用来判断这个值到底是不是NaN
+			// alert(isNaN(NaN));	// true
+			// alert(isNaN(25));		// false
+			// alert(isNaN(true));		// false
+
+
+			// Number()，将非数值转为数值
+			// alert(Number(true));		// true和false  1和0
+			// alert(Number(null));		// 0
+			// alert(Number(undefined));	// NaN
+
+			// alert(Number('123'));		// 123
+			// alert(Number('077'));		// 77
+
+			// alert(Number('0.33'));		// 0.33
+			// alert(Number('0.3.3.3'));		// NaN
+			// alert(Number('123qq'));		// NaN
+			// alert(Number('qq123'));			// NaN
+
+
+			// parseInt()，取整数
+			// alert(parseInt('123qq'));		// 123
+			// alert(parseInt('qq123'));		// NaN
+			// alert(parseInt('123.123'));		// 123
+			// alert(parseInt('123qq123'));		// 123
+
+
+			// parseFloat()，取浮点数
+			// alert(parseFloat('123qq'));		// 123
+			// alert(parseFloat('123.1.2.1'));		// 123.1
+			// alert(parseFloat('1.3q')); 		// 1.3
+		</script>
+	</body>
+</html>

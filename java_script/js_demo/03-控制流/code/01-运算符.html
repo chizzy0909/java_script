@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+			// 1、赋值运算符 "="
+			var str = "hello";
+			
+			// 2、自增 i = i + 1;
+			var i = 3;
+			// i = i + 1;
+			// i++;
+			// ++i;
+			// alert(i);
+			
+			// 3、自减
+			// i--;
+			// --i;
+			
+			// 4、前置和后置的区别
+			// 前置和后置是一样的						【没有赋值】
+			// 前置运算符，先加加(减减)操作，再赋值		【有赋值】
+			// alert(++i);   4
+			// 后置运算符，先赋值，再执行加加(减减)		【有赋值】
+			// aler(i++);	3
+			
+			
+			var a = 10;
+			var b = a++ + 6;		// 	先a=10,再执行加法操作 => b=16，最后才是a=11
+			// alert(a);
+			// alert(b);
+			
+			var c = 10;
+			var d = ++c + 6;		// 先c=11,再执行加法操作 => b=17
+			// alert(d);
+			
+			
+			// 5、算术运算符 (+ - * / %)
+			
+			// 6、关系运算符 (< <= > >= == != ===)
+			var num1 = 3;
+			var num2 = 4;
+			var str3 = '3';
+			
+			// 等于 ==
+//			if(num1 == num2){
+//				alert("相等");
+//			} else {
+//				alert("不相等");   √
+//			}
+//			if(num1 == str3){
+//				alert("相等");    √ （值相等）
+//			} else {
+//				alert("不相等");
+//			}
+			
+			
+			// 全等(恒等) ===
+//			if(num1 === str3){
+//				alert("相等");
+//			} else {
+//				alert("不相等");  √ （值相等但类型不相等）
+//			}
+			
+			// 不等于 !=
+//			if(num1 != num2){
+//				alert(true);
+//			} else {
+//				alert(false);    √
+//			}
+			
+			
+			
+			// 7、逻辑运算符 (&& || !)
+			// 逻辑与(并且) &&
+			var name = "liming";
+			var age = 23;
+			var sex = "女";
+//			if(age>18 && sex=='女' && name=='liming'){
+//				alert("符合条件");
+//			} else {
+//				alert("不符合条件");
+//			}
+
+			// 逻辑或(或) ||
+//			if(age<18 || age>30){
+//				alert("不符合条件");
+//			} else {
+//				alert("符合条件");
+//			}
+			
+			// 逻辑非 !
+			// alert( !true );
+			
+			
+			// 8、三目运算符
+			// 条件 ? true时 : false时;
+			var num5 = 10;
+			var num6 = 20;
+//			if(num5 < num6){
+//				alert("num6比较大");
+//			} else {
+//				alert("num5比较大");
+//			}
+			
+			num5<num6 ? alert("num6比较大") : alert("num5比较大");
+			
+		</script>
+	</body>
+</html>

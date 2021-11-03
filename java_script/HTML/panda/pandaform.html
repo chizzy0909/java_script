@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊猫问卷调查</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- <style>
+        h1 {
+            color: salmon;
+        }
+
+        h2 {
+            color: sandybrown;
+        }
+
+        p {
+            color: midnightblue;
+        }
+    </style> -->
+</head>
+
+<body>
+    <h1>熊猫问卷调查</h1>
+    <p>感谢您填写问卷</p>
+
+    <form action="" method="get">
+
+        <!-- 让用户选择文件的控件。使用accept属性规定控件能选择的文件类型。 -->
+        <input type="file" name="file"><br />
+
+        <!-- 默认值。单行的文本区域，输入中的换行会被自动去除。 -->
+        <label for="myName">姓名：</label> <!-- for+id:按下label姓名，输入的名字就会被选取 -->
+        <input id="myName" type="text" name="InputName" required value="Peter Wang" minlength="2" maxlength="20"
+            placeholder="请输入真实姓名" /><br />
+        <!-- name：输入的名字会被后端get,显示在Url上 （InputName=xxx）-->
+
+        <!-- 单选按钮，允许在多个拥有相同name值的选项中选中其中一个。 通过name判断选择范围,required只需选一个-->
+        <label for="">性别：</label>
+        <input id="male" type="radio" name="gender" value="male" required />
+        <label for="male">男</label>
+        <input id="female" type="radio" name="gender" value="female" />
+        <label for="female">女</label>
+        <input id="other" type="radio" name="gender" value="other" />
+        <label for="other">其他</label>
+        <br />
+
+        <!-- select option 下拉栏-->
+        <label for="">性别：</label>
+        <select name="gender" id="gender" required>
+            <option value=""></option>
+            <option value="male">男</option>
+            <option value="female">女</option>
+            <option value="other">其他</option>
+        </select>
+        <br />
+
+        <label for="tel">电话：</label>
+        <input id="tel" type="text" name="telephone" value="" /><br />
+
+        <!-- 编辑邮箱地址的区域。类似text输入，但在支持的浏览器和带有动态键盘的设备上会有确认参数和相应的键盘。 required：必填-->
+        <label for=myemail">邮箱：</label>
+        <input id="myemail" type="email" name="email" required placeholder="请输入真实邮箱" /><br />
+
+        <!-- 用于输入数字的控件。如果支持的话，会显示滚动按钮并提供缺省验证（即只能输入数字）。 -->
+        <label for="age">年龄：</label>
+        <input id="age" type="number" name="age" value="18" min="0" max="150" required step="1"><br />
+
+        <!-- 单行的文本区域，其值会被遮盖。如果站点不安全，会警告用户。 -->
+        <label for="password">密码：</label>
+        <input id="password" type="password" name="password" minlength="8" maxlength="12" /><br />
+
+        <!-- datalist -->
+        <label for="area">地区：</label>
+        <input list="areaList" id="area" type="text" name="area" /><br />
+        <datalist id="areaList">
+            <option value="基隆市">基隆</option>
+            <option value="台北市">台北</option>
+            <option value="台中市">台中</option>
+            <option value="新北市">新北</option>
+            <option value="高雄市">高雄</option>
+        </datalist>
+
+        <!-- textarea -->
+        <label for="suggestion">给网站的建议：</label><br />
+        <textarea name="suggestion" id="suggestion" cols="30" rows="10" placeholder="感谢提供建议！"></textarea><br />
+
+        <!-- 复选框，可设为选中或未选中。  checked已勾选-->
+        <input id="checkbox" type="checkbox" name="news" value="ture" checked />
+        <label for="checkbox">订阅熊猫电子报</label><br />
+
+        <!-- 此控件用于输入不需要精确的数字。控件是一个范围组件，默认值为正中间的值。 -->
+        0<input type="range" min="0" max="100" step="5" name="" id="" />100<br />
+
+        <button type="submit">提交表单</button>
+
+
+    </form>
+</body>
+
+</html>

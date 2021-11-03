@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+			// 案例4: 打印100–200之间所有能被3或者7整除的数
+			for(var i=100; i<=200; i++){
+				if(i%13==0 || i%7==0){
+					document.write(i);
+					document.write("<br />");
+				}
+			}
+		    
+			document.write("<br />");
+			
+			// 案例4: 打印100–200之间所有能被3并被7整除的数
+			for(var i=100; i<=200; i++){
+				if(i%13==0 && i%7==0){
+					document.write(i);
+					document.write("<br />");
+				}
+			}
+		</script>
+	</body>
+</html>

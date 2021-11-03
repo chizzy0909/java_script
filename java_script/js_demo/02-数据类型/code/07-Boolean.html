@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+			// true/false 
+			
+			var a = false;
+			alert(typeof a);  //boolean
+			alert(a);  //false
+			 
+			/*
+			 *  if(true/false){
+			 * 		// 真
+			 * 	} else {
+			 * 		// 假
+			 * 	}
+			 */
+			
+			var str = "hello";
+			
+			// 隐式转换
+			if(str){
+				alert("真");    //真（任何非空字符串）
+			} else {
+				alert("假");    
+			}
+
+			// 强制类型转换
+			alert( Boolean(str) ); //ture
+			
+			
+			var num = -10;
+			if(num){
+				alert("真");    //真（任何非零数值和无穷大）
+			} else {
+				alert("假");    //0 和 NaN
+			}
+		</script>
+	</body>
+</html>

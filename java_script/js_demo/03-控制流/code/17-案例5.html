@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+			// 案例5: 计算1+3+5+...+99的和; (多种方法实现)
+			
+			var sum = 0;
+			
+			// 方式一
+			for(var i=1; i<=99; i++){
+				// 奇数/偶数
+				// if(i%2 = 1)
+				if(i%2){
+					sum += i;    //判断i除以2的余数是否为零，不为零就执行if内的语句
+				}
+			}
+			document.write(sum);
+
+			// 方式二
+			for(var i=1; i<=99; i+=2){
+				sum += i;
+			}
+
+
+			// 方式三
+			var i = 1;
+			while(i<=99){
+				sum += i;
+				
+				i += 2;
+			}
+
+			// 方式四
+			var i = 1;
+			while(1){
+				sum += i;
+				i += 2;
+				
+				if(i > 100){
+					break;
+				}
+			}
+			
+		</script>
+	</body>
+</html>

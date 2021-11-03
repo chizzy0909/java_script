@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<body>
+		<script>
+			var j = 10;
+			var k = 30;
+			var num = 0;
+			var test = 0;
+			
+			// num = ++j;	// 先加加，后赋值
+			// alert(num);	// 11
+			
+			// num = j++;		// 先赋值，后加加
+			// alert(num);		// 10
+			
+			// num = j++ +3;
+			// alert(num);			// 13
+			// alert(j);           //11
+			
+			// num = j++ + ++k;
+			// j: 先赋值，后加加  ==> j=10
+			// k: 先加加，后赋值  ==> k = 31
+			// num = j + k	==> 41
+			// alert(num);	// 41
+			// alert(j);		// 11
+			// alert(k);		// 31
+			
+			// num = ++j + ++k;
+			// j: 先加加，后赋值 ==> j=11
+			// k: 先加加，后赋值 ==> k=31
+			// alert(num);		// 42
+			
+			// num = j-- + --k;
+			// j: 先赋值，后减减 ==> j=10;
+			// k: 先减减	，后赋值	==> k=29;
+			// alert(num);		// 39
+			
+			// test = ++j + k++;
+			// j: 先加加，后赋值	==> j=11;
+			// k: 先赋值，后加加 ==> k=30;
+			// alert(test);		// 41
+		</script>
+	</body>
+</html>

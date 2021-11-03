@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  background-color: aqua;
+}
+
+/* 寬度小於八百淺橘色，超過800藍色 */
+@media screen and (max-width: 800px) {
+  h1 {
+    background-color: bisque;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<input type="text" placeholder="请输入行" id="rows" />
+		<input type="text" placeholder="请输入列" id="cols" />
+		<input type="button" value="生成" id="bt" />
+
+		<div id="table"></div>
+		<!--<table>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+		</table> -->
+
+		<script type="text/javascript">
+			// 作业1: 输入行和列生成对应表格;
+			var oText1 = document.getElementById("rows");
+			var oText2 = document.getElementById("cols");
+			var oBt = document.getElementById("bt");
+			var oTable = document.getElementById("table");
+
+			oBt.onclick = function() {
+
+				var rows = Number(oText1.value);
+				var cols = Number(oText2.value);
+
+				var table = '<table border="1" width="300" height="200" cellspacing="0">';
+
+				//中间
+				for (var i = 0; i < rows; i++) {
+					table += "<tr>";
+
+					//行内对应的单元格
+					for (var j = 0; j < rows; j++) {
+						table += "<td></td>";
+					}
+
+					table += "</tr>";
+				}
+
+				table += "</table>";
+
+				//下述操作会覆盖输入框
+				//document.write(table);
+				//document.body.innerHTML = table;
+
+				//在此基础上，拼接表格
+				//document.body.innerHTML += table;
+
+				oTable.innerHTML = table;
+
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+			/*
+			 	案例6: 对应打印出下列图案
+				*				第1行，1个*					
+				**　				第2行，2个*
+				***				第3行，3个*
+				****			第4行，4个*
+				*****			第5行，5个*
+				******			第6行，6个*
+				...				第n行，n个*
+			 */
+			
+			// for嵌套
+			
+			// 输出10行
+			var num = 20;
+			for(var i=1; i<=num; i++){		// i表示第几行的意思
+				// 只是输出一个*
+				// document.write("*");
+				// document.write("<br />");
+				
+				// 要求，第n行，输出n个*
+				for(var j=0; j<i; j++){
+					document.write("*");
+				}
+				
+				document.write("<br />");
+			}
+			
+			
+		</script>
+	</body>
+</html>

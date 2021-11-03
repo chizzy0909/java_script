@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  background-color: #bbb9b9;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* 導覽列選擇時為僅文字 */
+nav {
+  background-color: #3b383c;
+}
+nav ul {
+  display: flex;
+  padding-left: 1rem;
+  list-style-type: none;
+}
+nav ul li {
+  padding: 0.5rem 0.75rem;
+}
+nav ul li a {
+  color: rgb(223, 223, 223);
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.25s ease;
+}
+nav ul li a:hover {
+  color: white;
+}
+
+.headerDescript {
+  font-size: 1.5rem;
+}
+.headerTitle {
+  font-size: 2.5rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* 左右壓縮時right向下移 */
+}
+section.left,
+section.right {
+  padding: 1.5rem;
+}
+section.right h4 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+section.left {
+  flex: 4 1 550px;
+}
+section.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 4 1 250px;
+}
+section.right p {
+  margin: 1rem 0rem;
+}
+
+.active {
+  color: white;
+}
+
+/* #curve_chart {
+  width: 100%;
+  height: 80%;
+} */
+
+@media screen and (max-width: 550px) {
+  #curve_chat {
+    width: 100%;
+    height: 40%;
+  }
+}
+
+/* 寬度小於625,標題變成豎著排列 */
+@media screen and (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
