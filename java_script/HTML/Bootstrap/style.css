@@ -1,0 +1,14 @@
+.jumbotron {
+  background-color: gainsboro;
+  padding: 4rem 2rem;
+}
+
+.btn-danger {
+  border-style: none;
+  background-color: gold;
+  transition: all 0.2s ease;
+}
+
+.btn-danger:hover {
+  background-color: hotpink;
+}

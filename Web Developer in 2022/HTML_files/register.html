@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+
+    <form action="" method="get">
+        <label for="firstN">First Name:</label>
+        <input id="firstN" type="text" name="firstname" required value="Peter Wang" minlength="2" maxlength="20"
+            placeholder="请输入真实姓名"><br>
+        <label for="LsatN">Last Name:</label>
+        <input id="LastN" type="text" name="lastname"><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required placeholder="请输入真实邮箱"><br>
+        <label for="passw">Password: </label>
+        <input type="password" name="password" id="passw" minlength="6" maxlength="15"><br>
+        <label for="birth">Birthday:</label>
+        <input type="date" name="birthday" id="birth"><br>
+
+        <label for="">Gender:</label>
+        <input type="radio" name="gender" value="Male" id="male" required>
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" value="Female" id="female">
+        <label for="gender">Female</label>
+        <input type="radio" name="gender" value="Other" id="other">
+        <label for="gender">Other</label><br>
+
+        <label for="">Pets:</label>
+        <input type="checkbox" name="cat" id="cat">
+        <label for="cat">Cats</label>
+        <input type="checkbox" name="dog" id="dog">
+        <label for="cat">Dogs</label><br>
+
+        <label for="">Cars</label>
+        <select name="cars" id="">
+            <option value=""></option>
+            <option value="toyota">TOYOTA</option>
+            <option value="benci">BENCI</option>
+            <option value="bmw">BMW</option>
+        </select><br>
+
+        <input type="submit" value="Regester">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+
+</html>

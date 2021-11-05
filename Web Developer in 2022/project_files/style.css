@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url(./gal_04_hrz_img_0072.jpg);
+  background-size: cover;
+}
+
+h2 > p {
+  margin: 1rem 0rem;
+  color: #aa3939;
+  text-align: center;
+  border: 5px solid #fa8d8d;
+  cursor: pointer;
+}
+
+p {
+  margin: 1rem 0rem;
+  color: #ad0606 !important;
+  text-align: center;
+  border: 5px solid #fa8d8d;
+  cursor: pointer;
+  font-size: 50%;
+}
+
+/* class */
+.text {
+  color: #f5e65e;
+  border: 5px dashed green;
+}
+
+.active {
+  color: #9be460;
+}
+
+/* div -> id */
+#div1 {
+  background: rgba(224, 114, 114, 0.3);
+}
+
+#div2 {
+  background: rgba(114, 165, 224, 0.3);
+}
+
+header nav ul li {
+  color: seashell;
+  display: inline-block;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+.aboutP {
+  text-decoration: underline;
+  text-transform: uppercase;
+  line-height: 3rem;
+  font-style: italic;
+  font-weight: bolder;
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Zilla Slab", serif;
+}
+
+.aboutImg {
+  float: left;
+  width: 500px;
+  height: 400px;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+}
+
+.boxmodel {
+  border: 4px solid red;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 2rem;
+  width: 10vw;
+  height: 10vw;
+}
+
+.loginP {
+  font-size: 20px;
+}
+
+span {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
