@@ -1,0 +1,103 @@
+#div1 {
+  width: 425px;
+  height: 420px;
+  border: 1px solid gray;
+}
+#div2 {
+  width: 390px;
+  height: 390px;
+  margin: auto;
+  margin-top: 15px;
+}
+#div21 {
+  width: 220px;
+  height: 72px;
+  margin: auto;
+  line-height: 72px;
+  margin: auto;
+}
+#div22 {
+  width: 355px;
+  height: 310px;
+  margin: auto;
+}
+#table1 {
+  width: 355px;
+  height: 30px;
+  border-spacing: 30px 33px;
+}
+#table2 {
+  width: 355px;
+  height: 30px;
+  line-height: 30px;
+  border-spacing: 30px 0px;
+}
+
+.rb_bottom,
+.rb_bottom .fy_y,
+.rb_bottom .pnbtn,
+.rb_bottom .previous,
+.rb_bottom .next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fy_y {
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #7baaa0;
+  border-radius: 50%;
+  color: #4f4f4f;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.fy_d {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(3, 3, 3);
+  margin-right: 12px;
+}
+.selected {
+  background: #164c86;
+  color: #fff;
+  border: 0;
+}
+.pnbtn,
+.previous,
+.next {
+  width: 62px;
+  height: 31px;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  background: #fff;
+  color: rgb(2, 2, 2);
+}
+.previous {
+  margin: 0 2px;
+}
+
+.zxfinput {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #dfdfdf;
+  margin: 0 12px;
+}
+
+.zxfokbtn {
+  width: 45px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #dfdfdf;
+  cursor: pointer;
+}

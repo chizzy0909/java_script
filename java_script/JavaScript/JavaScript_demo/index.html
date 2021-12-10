@@ -10,10 +10,50 @@
 </head>
 
 <body>
+    <div id="div1">
+        <div id="div2">
+            <div id="div21">
+                <button onclick="lastMon()">上一月</button>
+                <text id="yearAndMon"></text>
+                <button onclick="nextMon()">下一月</button>
+            </div>
+            <div id="div22">
+                <table id="table2">
+                    <tr>
+                        <td>日</td>
+                        <td>一</td>
+                        <td>二</td>
+                        <td>三</td>
+                        <td>四</td>
+                        <td>五</td>
+                        <td>六</td>
+                    </tr>
+                </table>
+                <table id="table1"></table>
+            </div>
+        </div>
+    </div>
 
+    <div class="rb_bottom">
+        <div class="fy_y selected">1</div>
+        <div class="fy_y">2</div>
+        <div class="fy_y">3</div>
+        <div class="fy_y">4</div>
+        <div class="fy_y">5</div>
+        <div class=""></div>
+        <div class="fy_y">10</div>
+        <div class="previous">上一页</div>
+        <div class="next">下一页</div>
 
+    </div>
+
+    <span>到第<input type="text" class="zxfinput" value="7">页</span>
+    <span class="zxfokbtn">确定</span>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./app.js"></script>
 </body>
 
-<script src="./app.js"></script>
+
 
 </html>
