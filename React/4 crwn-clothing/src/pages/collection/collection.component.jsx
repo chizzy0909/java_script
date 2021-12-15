@@ -6,7 +6,7 @@ import CollectionItem from "../../components/collection-item/collection-item.com
 import "./collection.styles.scss";
 
 const CollectionPage = (collection) => {
-  console.log(collection.collection);
+  //console.log(collection.collection);
   //   console.log(collection.title);
   return (
     <div className="collection-page">

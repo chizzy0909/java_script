@@ -3,6 +3,9 @@ import { useParams } from "react-router-dom";
 import CollectionPage from "../collection/collection.component";
 import { useSelector } from "react-redux";
 
+import WithSpinner from "../../components/with-spinner/with-spinner.component";
+const CollectionPageWithSpinner = WithSpinner(CollectionPage);
+
 const ShopPageDetail = () => {
   let params = useParams();
   let id = params.collectionId;
@@ -15,7 +18,7 @@ const ShopPageDetail = () => {
 
   return (
     <div className="shop-page">
-      <CollectionPage key={id} collection={collection} />
+      <CollectionPageWithSpinner key={id} collection={collection} />
     </div>
   );
 };

@@ -4,14 +4,16 @@ import { Route, Routes, useParams } from "react-router-dom";
 import CollectionsOverview from "../../components/collections-overview/collections-overview.component";
 //import CollectionPage from "../collection/collection.component";
 
+import WithSpinner from "../../components/with-spinner/with-spinner.component";
+const CollectionsOverviewWithSpinner = WithSpinner(CollectionsOverview);
+
 const ShopPage = (params) => {
   params = useParams();
-  console.log(params);
-
+  //console.log(params);
   return (
     <div className="shop-page">
       <Routes>
-        <Route exact path="/" element={<CollectionsOverview />} />
+        <Route exact path="/" element={<CollectionsOverviewWithSpinner />} />
         {/* <Route path="/collectionId" element={<CollectionPage />} /> */}
       </Routes>
     </div>
