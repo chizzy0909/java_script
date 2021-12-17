@@ -7,12 +7,16 @@ import "./collection.styles.scss";
 
 const CollectionPage = (collection) => {
   //console.log(collection.collection);
-  //   console.log(collection.title);
+  // console.log(collection.title);
+
+  const { title, items } = collection.collection;
+  //console.log(title, items);
+
   return (
     <div className="collection-page">
-      <h2 className="title">{collection.collection.title}</h2>
+      <h2 className="title">{title}</h2>
       <div className="items">
-        {collection.collection.items.map((item) => (
+        {items.map((item) => (
           <CollectionItem key={item.id} item={item} />
         ))}
       </div>

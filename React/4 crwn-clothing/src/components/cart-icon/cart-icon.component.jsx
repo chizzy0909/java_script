@@ -1,24 +1,31 @@
 import React from "react";
 
-import { connect } from "react-redux";
+//import { connect } from "react-redux";
 import { toggleCartHidden } from "../../redux/cart/cart.actions";
-
 import { selectCartItemsCount } from "../../redux/cart/cart.selectors";
 
 import { ReactComponent as ShoppingIcon } from "../../assets/shopping-bag.svg";
 import "./cart-icon.styles.scss";
 
-// onClick后将参数传给({});
-const CartIcon = ({ toggleCartHidden, itemCount }) => (
-  <div className="cart-icon" onClick={toggleCartHidden}>
-    <ShoppingIcon className="shopping-icon" />
-    <span className="item-count">{itemCount}</span>
-  </div>
-);
+import { useDispatch, useSelector } from "react-redux";
 
-const mapDispatchToProps = (dispatch) => ({
-  toggleCartHidden: () => dispatch(toggleCartHidden()),
-});
+const CartIcon = () => {
+  const cartItemsCount = useSelector(selectCartItemsCount);
+  const dispatch = useDispatch();
+
+  return (
+    <div className="cart-icon" onClick={() => dispatch(toggleCartHidden())}>
+      <ShoppingIcon className="shopping-icon" />
+      <span className="item-count">{cartItemsCount}</span>
+    </div>
+  );
+};
+
+export default CartIcon;
+
+// const mapDispatchToProps = (dispatch) => ({
+//   toggleCartHidden: () => dispatch(toggleCartHidden()),
+// });
 
 // const mapStateToProps = ({ cart: { cartItems } }) => {
 //   //console.log({ cartItems });
@@ -30,11 +37,12 @@ const mapDispatchToProps = (dispatch) => ({
 //     ),
 //   };
 // };
-const mapStateToProps = (state) => ({
-  itemCount: selectCartItemsCount(state),
-});
 
-export default connect(mapStateToProps, mapDispatchToProps)(CartIcon);
+// const mapStateToProps = (state) => ({
+//   itemCount: selectCartItemsCount(state),
+// });
+
+// export default connect(mapStateToProps, mapDispatchToProps)(CartIcon);
 
 //往上传参数
 //写完后在root-reducer中添加。

@@ -21,3 +21,4 @@ export const selectCollection = collectionUrlParam => createSelector(
     collections => (collections ? collections[collectionUrlParam] : null)
 
 );
+
