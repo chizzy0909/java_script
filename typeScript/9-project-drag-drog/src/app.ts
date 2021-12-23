@@ -1,0 +1,19 @@
+//名前空間の利用
+/// <reference path='./models/drag-drog.ts'/>
+/// <reference path='./models/project-model.ts'/>
+/// <reference path='./state/project-state.ts'/>
+/// <reference path='./utils/validation.ts'/>
+/// <reference path='./decorators/autobind-decorator.ts'/>
+/// <reference path='./components/base-component.ts'/>
+/// <reference path='./components/project-input.ts'/>
+/// <reference path='./components/project-item.ts'/>
+/// <reference path='./components/project-list.ts'/>
+
+namespace App {
+  // const projInput = new ProjectInput();
+  // const activePrjList = new ProjectList("active");
+  // const finishedPrjList = new ProjectList("finished");
+  new ProjectInput();
+  new ProjectList("active");
+  new ProjectList("finished");
+}
